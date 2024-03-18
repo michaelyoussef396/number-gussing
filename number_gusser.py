@@ -28,6 +28,9 @@ while True:
         print("You got it!")
         break
     else:
-        print("Sorry, that's not it!")
+        if user_guess > random_number:
+            print("You were above the number!")
+        else:
+            print("You were below the number!")
 
 print(f"You got it in {guess} guesses.")
